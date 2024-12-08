@@ -1,0 +1,32 @@
+EXPORT:
+
+Command to export database, run in CMD (not SQLPlus or SQL developer):
+	expdp your_user/your_password DIRECTORY=dpump_dir DUMPFILE=export.dmp LOGFILE=export.log SCHEMAS=schema_name
+
+Example:
+	expdp lulo97/123 DIRECTORY=export_path DUMPFILE=schema_export.dmp LOGFILE=schema_export.log SCHEMAS=lulo97
+
+To run export command success:
+- Using sys user to create directory = export_path
+- Using sys user to grant read/write on that directory to exported schema (lulo97)
+- Open cmd and put username, password and exported dmp file, exported log file and schema name in command
+- Run command
+
+Example code for create directory and grant privileges:
+CREATE OR REPLACE DIRECTORY export_path AS 'C:/Users/admin/Desktop/ExportOracleSchema';
+GRANT READ, WRITE ON DIRECTORY export_path TO lulo97;
+
+IMPORT:
+
+Command to import database, run in CMD:
+	impdp lulo97_import/123 DIRECTORY=import_path DUMPFILE=schema_export.dmp LOGFILE=schema_import.log REMAP_SCHEMA=LULO97:LULO97_IMPORT
+
+Create import directory = import_path and grant read/write to imported schema (lulo97_import)
+
+--Create user
+CREATE USER LULO97_IMPORT IDENTIFIED BY 123;
+GRANT CONNECT, RESOURCE TO LULO97_IMPORT;
+GRANT IMP_FULL_DATABASE TO LULO97_IMPORT;
+
+--Run command
+impdp lulo97_import/123 DIRECTORY=import_path DUMPFILE=schema_export.dmp LOGFILE=schema_import.log REMAP_SCHEMA=LULO97:LULO97_IMPORT

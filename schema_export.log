@@ -1,0 +1,28 @@
+;;; 
+Export: Release 11.2.0.2.0 - Production on Sun Dec 8 10:44:45 2024
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+;;; 
+Connected to: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+Starting "LULO97"."SYS_EXPORT_SCHEMA_01":  lulo97/******** DIRECTORY=export_path DUMPFILE=schema_export.dmp LOGFILE=schema_export.log SCHEMAS=lulo97 
+Estimate in progress using BLOCKS method...
+Processing object type SCHEMA_EXPORT/TABLE/TABLE_DATA
+Total estimation using BLOCKS method: 192 KB
+Processing object type SCHEMA_EXPORT/PRE_SCHEMA/PROCACT_SCHEMA
+Processing object type SCHEMA_EXPORT/SEQUENCE/SEQUENCE
+Processing object type SCHEMA_EXPORT/TABLE/TABLE
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/INDEX
+Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/CONSTRAINT
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/STATISTICS/INDEX_STATISTICS
+Processing object type SCHEMA_EXPORT/TABLE/COMMENT
+Processing object type SCHEMA_EXPORT/PROCEDURE/PROCEDURE
+Processing object type SCHEMA_EXPORT/PROCEDURE/ALTER_PROCEDURE
+Processing object type SCHEMA_EXPORT/TABLE/STATISTICS/TABLE_STATISTICS
+. . exported "LULO97"."ERRORS"                           6.023 KB       5 rows
+. . exported "LULO97"."LOGS"                             7.953 KB       8 rows
+. . exported "LULO97"."TODOS"                            5.828 KB       2 rows
+Master table "LULO97"."SYS_EXPORT_SCHEMA_01" successfully loaded/unloaded
+******************************************************************************
+Dump file set for LULO97.SYS_EXPORT_SCHEMA_01 is:
+  C:\USERS\ADMIN\DESKTOP\EXPORTORACLESCHEMA\SCHEMA_EXPORT.DMP
+Job "LULO97"."SYS_EXPORT_SCHEMA_01" successfully completed at 10:44:59

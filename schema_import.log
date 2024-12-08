@@ -1,0 +1,19 @@
+;;; 
+Import: Release 11.2.0.2.0 - Production on Sun Dec 8 11:21:13 2024
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+;;; 
+Connected to: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+Master table "LULO97_IMPORT"."SYS_IMPORT_FULL_01" successfully loaded/unloaded
+Starting "LULO97_IMPORT"."SYS_IMPORT_FULL_01":  lulo97_import/******** DIRECTORY=import_path DUMPFILE=schema_export.dmp LOGFILE=schema_import.log REMAP_SCHEMA=LULO97:LULO97_IMPORT 
+Processing object type SCHEMA_EXPORT/PRE_SCHEMA/PROCACT_SCHEMA
+Processing object type SCHEMA_EXPORT/SEQUENCE/SEQUENCE
+Processing object type SCHEMA_EXPORT/TABLE/TABLE
+Processing object type SCHEMA_EXPORT/TABLE/TABLE_DATA
+. . imported "LULO97_IMPORT"."ERRORS"                    6.023 KB       5 rows
+. . imported "LULO97_IMPORT"."LOGS"                      7.953 KB       8 rows
+. . imported "LULO97_IMPORT"."TODOS"                     5.828 KB       2 rows
+Processing object type SCHEMA_EXPORT/PROCEDURE/PROCEDURE
+Processing object type SCHEMA_EXPORT/PROCEDURE/ALTER_PROCEDURE
+Processing object type SCHEMA_EXPORT/TABLE/STATISTICS/TABLE_STATISTICS
+Job "LULO97_IMPORT"."SYS_IMPORT_FULL_01" successfully completed at 11:21:15
