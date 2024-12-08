@@ -1,0 +1,8 @@
+Install Oracle 11.2
+
+Download oracle client and add to PATH
+
+Create a simple express nodejs project
+- npm instal oracledb
+
+Add oracle client path, username, password, connectString to oracledb in app.js
